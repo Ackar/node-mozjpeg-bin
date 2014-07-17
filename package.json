@@ -1,0 +1,45 @@
+{
+  "name": "mozjpeg-bin",
+  "version": "0.1.0",
+  "description": "Wrapper for mozjpeg binaries",
+  "license": "MIT",
+  "repository": "ackar/node-mozjpeg-bin",
+  "author": {
+    "name": "Sylvain Cleymans",
+    "email": "sylvain.cleymans@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bin": {
+    "mozjpeg-cjpeg": "cli/cjpeg.js",
+    "mozjpeg-djpeg": "cli/djpeg.js",
+    "mozjpeg-jpegtran": "cli/jpegtran.js"
+  },
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "test": "mocha --reporter list --timeout 0"
+  },
+  "files": [
+    "cli/djpeg.js",
+    "cli/cjpeg.js",
+    "cli/jpegtran.js",
+    "postinstall.js",
+    "index.js"
+  ],
+  "keywords": [
+    "jpeg",
+    "jpg",
+    "img",
+    "image",
+    "compress",
+    "minify",
+    "mozjpeg",
+    "optimize"
+  ],
+  "dependencies": {
+    "bin-build": "^0.1.0",
+    "bin-wrapper": "^0.3.0",
+    "chalk": "^0.4.0"
+  }
+}
