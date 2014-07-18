@@ -6,8 +6,8 @@ var mozjpeg = require('./index');
 
 var builder = new BinBuild()
     .src('https://github.com/mozilla/mozjpeg/archive/v2.0.tar.gz')
-    .cfg('autoreconf -fiv && ./configure --prefix="' + mozjpeg.jpegtran.dest()
-         + '" --bindir="' + mozjpeg.jpegtran.dest() + '" --libdir="' + mozjpeg.jpegtran.dest()
+    .cfg('autoreconf -fiv && ./configure --prefix="' + mozjpeg.binPath
+         + '" --bindir="' + mozjpeg.binPath + '" --libdir="' + mozjpeg.binPath
          + '"')
     .make('make install');
 
