@@ -1,6 +1,6 @@
 {
   "name": "mozjpeg-bin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wrapper for mozjpeg binaries",
   "license": "MIT",
   "repository": "ackar/node-mozjpeg-bin",
